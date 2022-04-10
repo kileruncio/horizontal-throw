@@ -11,7 +11,7 @@ v = float(input("Enter Launch velocity in (m/s): "))                # Launch vel
 G = -9.81                                                           # Gravitational Acceleration
 k = float(input("Enter Resistance Force Consant: "))                # Resistance force constant
 m = float(input("Enter Mass of the object in(kg): "))               # Mass of the object
-t = 0.0                                                             #Starting time
+t = 0.0                                                             
 x = 0.0
 y = 0.0
 vx,vy = v*cos(theta), v*sin(theta)  # Initial vertical and horizontal speeds
@@ -119,9 +119,9 @@ else:
      print('Bad argument')
 
 plt.figure()
-plt.plot(xa_1, ya_1, color = 'r', label = 'Analitic')  #Analitic
-plt.plot(xa_2, ya_2, color = 'b', label = 'Euler')     #Euler
-plt.plot(xa_3, ya_3, color = 'g', label = 'Mid-Point') #Mid-Point
+plt.plot(xa_1, ya_1, color = 'r')  #Analitic
+plt.plot(xa_2, ya_2, color = 'b')     #Euler
+plt.plot(xa_3, ya_3, color = 'g') #Mid-Point
 plt.ylim(0, Max_Height + Max_Height/10)
 plt.ylabel('Horizontal Axis (m)')
 plt.xlabel('Vertical Axis (m)')
